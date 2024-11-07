@@ -46,4 +46,4 @@ This Python script checks the validity of proxies by attempting to connect and d
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Note
-This script only for testing purpose.
+This script is only for educational purposes.
