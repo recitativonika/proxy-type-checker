@@ -5,7 +5,6 @@ import yaml
 import sys
 import signal
 
-# Initialize colorama
 init(autoreset=True)
 
 def signal_handler(sig, frame):
@@ -67,7 +66,6 @@ def main():
     with open(proxy_file, "r") as file:
         proxies = [proxy.strip() for proxy in file.readlines()]
 
-    # Load max_workers from config.yaml
     max_workers = load_config()
     
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
